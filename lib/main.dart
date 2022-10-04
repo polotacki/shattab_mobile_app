@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-void main() {
+import 'package:shattab_mobile_app/utils/styles/constants.dart';
+import 'presentation/on_boarding/on_boarding_screen.dart';
 
+void main() {
   runApp(const MyApp());
 }
 
@@ -18,8 +20,9 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           theme: ThemeData(
             primarySwatch: Colors.blue,
+            scaffoldBackgroundColor: kBackgroundColor,
           ),
-          home: SplashScreen()),
+          home: OnBoardingScreen()),
     );
   }
 }
